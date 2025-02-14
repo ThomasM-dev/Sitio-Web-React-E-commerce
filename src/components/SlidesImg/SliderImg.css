@@ -33,8 +33,8 @@
 
 @media (max-width: 480px) {
     .slider-img {
-        max-width: 40%;
-        height: 40%;
+        max-width: 60%;
+        height: 60%;
     }
     .slider-container {
         text-align: center;
