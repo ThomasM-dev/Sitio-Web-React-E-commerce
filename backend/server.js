@@ -1,54 +1,32 @@
-require('dotenv').config();
-const express = require('express');
-const axios = require('axios');
-const mercadopago = require('mercadopago');
+import express from "express"
+import cors from "cors"
+import { createPreference } from "./mercado-pago-payment/mercado-pago-payment.js"
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app = express()
+app.use(cors())
+app.use(express.json())
 
-// Configura el SDK de Mercado Pago con tu access token
-mercadopago.configure({
-  access_token: process.env.MERCADO_PAGO_ACCESS_TOKEN,
-});
+app.listen(3000, () => {
+  console.log("Puerto levantado en 5176")
+})
 
-// Middleware para parsear JSON
-app.use(express.json());
-
-// Ruta para crear un pago
-app.post('/create-payment', async (req, res) => {
-  try {
-    const { title, price, unit, quantity } = req.body;
-
-    // Crear el objeto de preferencia
-    let preference = {
-      items: [
-        {
-          title,
-          unit_price: parseFloat(price),
-          currency_id: 'ARS', // Cambia según tu moneda
-          quantity: parseInt(quantity),
-        },
-      ],
-      back_urls: {
-        success: 'http://localhost:3000/success',
-        failure: 'http://localhost:3000/failure',
-        pending: 'http://localhost:3000/pending',
-      },
-      auto_return: 'approved',
-    };
-
-    // Crear la preferencia en Mercado Pago
-    const response = await mercadopago.preferences.create(preference);
-
-    // Devolver la URL de pago al frontend
-    res.status(200).json({ paymentUrl: response.body.init_point });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Error al crear el pago' });
+app.post("/api/mercadopago/create_preference", async (req, res) => {
+  if (!req.body.items || !Array.isArray(req.body.items)) {
+    return res.status(400).json({ error: 'Se esperaba un array de ítems en el cuerpo de la solicitud' });
   }
-});
 
-// Iniciar el servidor
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  try {
+    console.log("Solicitando creación de preferencia...");
+    const response = await createPreference(req.body.items);
+    console.log("Respuesta de MercadoPago:", response);
+
+    if (response) {
+      res.status(200).json(response);
+    } else {
+      res.status(500).json({ error: 'No se recibió una respuesta válida de MercadoPago' });
+    }
+  } catch (error) {
+    console.error("Error al procesar la preferencia:", error); 
+    res.status(500).json({ error: error.message });
+  }
 });

@@ -5,15 +5,13 @@ import NavBar from "../../components/NavBar";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { BiTransferAlt } from "react-icons/bi";
 import { SiMercadopago } from "react-icons/si";
-import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 import "./Cart.css";
 import EmptyCart from "../../components/EmptyCart";
 import Swal from "sweetalert2";
 import BankTransfer from "../BankTransfer";
+import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 import { selectUser } from "../../Authetications/authSlice";
-import createPreference from "../../GlobalState/apiSlice/apiSlice"
-// Clave pública de Mercado Pago
-const MERCADO_PAGO_PUBLIC_KEY = "APP_USR-b0c1c712-43ed-4117-bd2f-364227ba75b6";
+import {createPreference} from "../../GlobalState/createPreference/create";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -25,24 +23,21 @@ const Cart = () => {
   const [showFinalizeButton, setShowFinalizeButton] = useState(true);
   const currentUser = useSelector(selectUser);
 
-  // Inicializar Mercado Pago
-  useEffect(() => {
-    initMercadoPago(MERCADO_PAGO_PUBLIC_KEY);
+  useEffect(() => {    
+    initMercadoPago("APP_USR-b0c1c712-43ed-4117-bd2f-364227ba75b6");
   }, []);
 
-  // Cargar carrito desde localStorage
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cartProduct")) || [];
-    setCartItems(storedCart);
+    const cartWithQuantities = storedCart.map(item => ({ ...item, quantity: item.quantity || 1 }));
+    setCartItems(cartWithQuantities);
   }, []);
 
-  // Calcular precio total con o sin descuento
   const totalPrice = useMemo(() => {
-    const subtotal = cartItems.reduce((acc, item) => acc + item.price, 0);
+    const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
     return selectedPayment === "transfer" ? subtotal * 0.9 : subtotal;
   }, [cartItems, selectedPayment]);
 
-  // Eliminar producto del carrito
   const removeItemFromCart = (itemId) => {
     Swal.fire({
       title: "¿Estás seguro de eliminar este producto?",
@@ -62,21 +57,40 @@ const Cart = () => {
     });
   };
 
+  const updateQuantity = (itemId, quantity) => {
+    const updatedCart = cartItems.map((item) => {
+      if (item.id === itemId) {
+        return { ...item, quantity: Math.max(1, parseInt(quantity, 10) || 1) };
+      }
+      return item;
+    });
+    setCartItems(updatedCart);
+    localStorage.setItem("cartProduct", JSON.stringify(updatedCart));
+  };
+
+  const handleAddToCart = (product) => {
+    const existingProductIndex = cartItems.findIndex((item) => item.id === product.id);
+    if (existingProductIndex !== -1) {
+      const updatedCart = [...cartItems];
+      updatedCart[existingProductIndex].quantity += 1;
+      setCartItems(updatedCart);
+      localStorage.setItem("cartProduct", JSON.stringify(updatedCart));
+    } else {
+      const updatedCart = [...cartItems, { ...product, quantity: 1 }];
+      setCartItems(updatedCart);
+      localStorage.setItem("cartProduct", JSON.stringify(updatedCart));
+    }
+  };
+
   const handleCheckout = async () => {
     try {
       if (selectedPayment === "mercado") {
         const items = cartItems.map((item) => ({
           title: item.title,
           unit_price: Number(item.price),
-          quantity: 1,
-          currency_id: "ARS",
-        }));
-
-        console.log("Enviando items al backend:", items);
-
+          quantity: item.quantity,
+        }));        
         const response = await createPreference(items);
-        console.log("Respuesta del backend:", response);
-
         if (response?.id) {
           setPreferenceId(response.id);
           setShowFinalizeButton(false);
@@ -113,7 +127,19 @@ const Cart = () => {
                       </h3>
                       <RiDeleteBin6Line onClick={() => removeItemFromCart(item.id)} className="btn-remove-product" />
                     </div>
-                    <p className="product-price">${item.price} ARS</p>
+                    <div className="quantity-control">
+                      <button onClick={() => updateQuantity(item.id, item.quantity - 1)} disabled={item.quantity <= 1}>
+                        -
+                      </button>
+                      <input
+                        type="number"
+                        value={item.quantity}
+                        min="1"
+                        onChange={(e) => updateQuantity(item.id, e.target.value)}
+                      />
+                      <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
+                    </div>
+                    <p className="product-price">{item.price * item.quantity} ARS</p>
                   </div>
                 </div>
               ))}
@@ -121,7 +147,7 @@ const Cart = () => {
             <div className="content-payment">
               <div className="content-payment-total">
                 <h3>Total</h3>
-                <p>${totalPrice.toLocaleString()}</p>
+                <p>{totalPrice.toLocaleString()}</p>
                 {selectedPayment === "transfer" && (
                   <p className="discount-message">Tienes un 10% de descuento con transferencia</p>
                 )}

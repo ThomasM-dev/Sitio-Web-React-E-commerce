@@ -196,5 +196,14 @@ body {
   .summary-item,
   .summary-total {
     font-size: 14px;
+    display: flex;
+  }
+  .content-payment-total {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .discount-message {
+    width: 100%;
   }
 }

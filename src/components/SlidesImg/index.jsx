@@ -49,7 +49,7 @@ const SliderImg = () => {
     return (
         <div className="slider-container">
             <Slider {...settings}>
-                {productsImg.map((product, index) => (
+                {productsImg.slice(0,10).map((product, index) => (
                     <div key={index} className="slider-item">
                         <img
                             src={product.imageUrl}
