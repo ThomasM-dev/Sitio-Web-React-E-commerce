@@ -1,0 +1,114 @@
+.Acount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.Acount::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #b96b85;
+}
+
+.error {
+  color: #ffabc6;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.btn-acount {
+  width: 100%;
+  padding: 10px;
+  background-color:#b96b85;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-acount:hover {
+  background-color: #cb7b95
+}
+
+.toggle-button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #b96b85;
+  border: 1px solid #b96b85;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle-button:hover {
+  background-color: #cb7b95;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .Acount {
+    background-image: url('/backgroundAcountMobile.webp');
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (min-width: 769px) {
+  .Acount {
+    background-image: url('/backgroundAcountPc.webp');
+  }
+}

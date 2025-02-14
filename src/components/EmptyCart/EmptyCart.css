@@ -1,0 +1,46 @@
+/* Estilos generales */
+.carrito-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f0f5; /* Fondo rosado claro */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Estilos del mensaje */
+  .mensaje {
+    font-size: 1.5rem;
+    color: #e91e63; /* Rosado más oscuro */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del botón */
+  .comprar-btn {
+    background-color: #e91e63; /* Rosado más oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comprar-btn:hover {
+    background-color: #c2185b; /* Rosado más oscuro al hacer hover */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .mensaje {
+      font-size: 1.2rem;
+    }
+  
+    .comprar-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }

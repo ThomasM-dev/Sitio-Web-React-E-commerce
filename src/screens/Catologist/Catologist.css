@@ -1,0 +1,58 @@
+.catologist-page {
+    padding: 20px;
+    background-color:#ffabc6;
+    min-height: 100vh;
+  }
+  
+  .catologist-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #560000;
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #ffd2e2;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    color: #b96b85;
+    font-weight: bold;
+  }

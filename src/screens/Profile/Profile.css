@@ -1,0 +1,107 @@
+/* Paleta de colores rosados */
+:root {
+  --primary-color: #ff69b4; /* Rosa fuerte */
+  --secondary-color: #ffb6c1; /* Rosa claro */
+  --background-color: #fff0f5; /* Rosa muy claro */
+  --text-color: #333; /* Color de texto principal */
+  --text-light: #555; /* Color de texto secundario */
+  --white: #ffffff; /* Blanco */
+}
+
+/* Estilos generales del contenedor */
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 10%;
+}
+
+/* Título del perfil */
+.profile-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Información del usuario */
+.profile-info {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* Sección de compras */
+.purchases-section {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.purchases-title {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.purchases-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.purchase-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 14px;
+}
+
+.purchase-item:last-child {
+  border-bottom: none;
+}
+
+.purchase-product {
+  color: var(--text-color);
+}
+
+.purchase-date {
+  color: var(--text-light);
+}
+
+.no-purchases {
+  text-align: center;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Botón de cerrar sesión */
+.logout-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,144 @@
+{
+   "products": [
+    {
+      "id": 1,
+      "title": "Ramo de margaritas naranjas",
+      "description": "Hermoso ramo de 4 margaritas naranjas artesanales con pétalos de papel crepé naranja, con un envoltorio de papel celofán negro y un moño de cinta de seda combinando calidez y elegancia en un diseño único. Las margaritas representan alegría, entusiasmo y energía positiva.",
+      "price": 17000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055714/Sin_t%C3%ADtulo-20-Photoroom_nc7qid.webp"
+    },
+    {
+      "id": 2,
+      "title": "Ramo de corazón con 16 rosas de color bordó y 14 rosas blancas",
+      "description": "Un elegante ramo en forma de corazón compuesto por 16 rosas de color bordó que delinean el contorno, realzando su forma romántica y sofisticada. En el centro, 14 rosas blancas crean un hermoso contraste aportando pureza y equilibrio al diseño. Como toque final, un moño de cinta de raso bordó añade un detalle refinado, ideal para expresar amor, pasión y elegancia en cualquier ocasión especial.",
+      "price": 27000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055713/Sin_t%C3%ADtulo-17-Photoroom_ovcjjr.webp"
+    },
+    {
+      "id": 3,
+      "title": "Ramo de claveles rojos",
+      "description": "Un elegante ramo de 12 claveles rojos de pétalos aterciopelados y vibrante color carmesí, cuidadosamente dispuestos para resaltar su belleza y frescura. El conjunto está envuelto en un delicado celofán de tono verde agua que aporta un sutil contraste y realza la intensidad de las flores. Como toque final, un moño blanco de celofán adorna el ramo, añadiendo un detalle sofisticado y armonioso. Ideal para expresar amor, admiración o gratitud con un gesto clásico y refinado.",
+      "price": 23000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055713/Sin_t%C3%ADtulo-19-Photoroom_g4ztyn.webp"
+    },
+    {
+      "id": 4,
+      "title": "Ramo de rosas blancas, celeste y azul",
+      "description": "Hermoso ramo de rosas artesanales: 6 rosas blancas, 3 rosas celeste y 3 azules. Un delicado ramo compuesto por 6 rosas blancas de impecable pureza, 3 rosas celeste de tono suave y 3 rosas azules de color profundo e intenso, creando un contraste armonioso y elegante. Los tallos están cuidadosamente envueltos con una cinta de raso celeste, aportando un toque de refinamiento y sutileza. El ramo descansa en un pequeño florero de vidrio transparente, cuya base azul complementa la composición resaltando la belleza y la frescura de las flores. Una pieza sofisticada y equilibrada, ideal para transmitir serenidad, aprecio y distinción.",
+      "price": 25000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055713/Sin_t%C3%ADtulo-16-Photoroom_mh1fkc.webp"
+    },
+    {
+      "id": 5,
+      "title": "Ramo de 5 calas de color blanco",
+      "description": "Ramo de 5 calas de color blanco. Un elegante arreglo de 5 calas blancas de pétalos suaves y curvados, destacando su forma estilizada y su delicada textura. En el centro de cada flor, un pimpollo delgado y fino de amarillo vibrante añade un sutil contraste, resaltando la pureza del blanco con un toque de calidez. Las calas están cuidadosamente dispuestas en un florero azul, cuya tonalidad profunda realza la frescura y sofisticación del conjunto, creando una composición armoniosa y refinada, ideal para transmitir elegancia y serenidad.",
+      "price": 18000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055713/Sin_t%C3%ADtulo-18-Photoroom_jxufm6.webp"
+    },
+    {
+      "id": 6,
+      "title": "Bellísimo ramo de novia con 6 rosas blancas y 6 rosas rojas",
+      "description": "Un sofisticado ramo de novia compuesto por 6 rosas blancas de pureza impecable y 6 rosas rojas de un intenso color pasión, creando un equilibrio perfecto entre elegancia y romanticismo. Todo el ramo está adornado con delicadas puntillas redondas pequeñas que le aportan un toque de refinamiento y encanto vintage. En la parte troncal, los tallos están cuidadosamente envueltos con una cinta blanca, asegurando un acabado prolijo y elegante. Un diseño clásico y armonioso, ideal para una novia que busca un detalle atemporal y lleno de significado.",
+      "price": 50000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-15-Photoroom_1_mwgfvo.webp"
+    },
+    {
+      "id": 7,
+      "title": "Ramo de 6 rosas blancas y 6 rosas rosadas",
+      "description": "Un hermoso ramo compuesto por rosas blancas de pureza radiante y 6 rosas rosadas de tono suave y delicado, creando una combinación armoniosa y elegante. Las flores están envueltas en un fino papel madera, que aporta un toque rústico y natural al arreglo. Como detalle final, un moño de cinta ancha blanca realza la presentación con un aire sofisticado y refinado. Un ramo ideal para expresar cariño, gratitud y ternura con un estilo sutil y encantador.",
+      "price": 50000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-13-Photoroom_qnp2lg.webp"
+    },
+    {
+      "id": 8,
+      "title": "Ramo de 12 margaritas de color azul",
+      "description": "Un llamativo ramo de margaritas azules de pétalos vibrantes y frescura radiante, que transmiten una sensación de serenidad y encanto. Las flores están envueltas en un elegante papel negro, creando un contraste sofisticado que realza la intensidad del azul. Como toque final, un moño de cinta ancha azul complementa la composición, aportando armonía y un detalle refinado. Un ramo ideal para sorprender con un estilo moderno y distinguido.",
+      "price": 55000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-12-Photoroom_rhxflp.webp"
+    },
+    {
+      "id": 9,
+      "title": "Ramo de 7 rosas verde claro",
+      "description": "Un elegante ramo compuesto por rosas de un delicado tono verde claro, cuya suavidad y frescura transmiten armonía y originalidad. El arreglo está envuelto en una combinación de papel celofán verde claro y papel negro, creando un contraste sofisticado que resalta la singular belleza de las flores. Como toque final, una cinta ancha de raso en un intenso verde oscuro adorna la base del ramo, aportando un acabado refinado y distinguido. Un diseño moderno y cautivador, ideal para sorprender con un detalle único y elegante.",
+      "price": 50000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-11-Photoroom_i3aykh.webp"
+    },
+    {
+      "id": 10,
+      "title": "Ramo de rosas colores rosado, naranja y blanco",
+      "description": "Un vibrante ramo de 7 rosas únicas, cada una con una fascinante combinación de tres colores: rosado, naranja y blanco, creando un efecto degradado armonioso y lleno de vida. Los pétalos se fusionan en un juego de tonalidades cálidas y suaves, transmitiendo alegría y delicadeza. El ramo es sostenido con gracia por una mano, resaltando la belleza natural de las flores y su frescura. Un arreglo cautivador y original, ideal para transmitir energía, calidez y admiración en una sola mirada.",
+      "price": 25000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-10-Photoroom_hnymgz.webp"
+    },
+    {
+      "id": 11,
+      "title": "Arreglo floral de 12 rosas azules y 3 rosas blancas",
+      "description": "Un arreglo floral compuesto por 12 rosas azules de intenso y profundo color, acompañadas por 3 delicadas rosas blancas que aportan equilibrio y contraste. El conjunto está enmarcado por hojas verdes en los costados, añadiendo frescura y un toque natural a la composición. Todas las flores están cuidadosamente dispuestas dentro de un contenedor redondo blanco, decorado con una sutil franja celeste pintada, que realza la armonía cromática del arreglo. Un diseño sofisticado y cautivador, perfecto para transmitir serenidad, admiración y distinción.",
+      "price": 50000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-6-Photoroom_giirk2.webp"
+    },
+    {
+      "id": 12,
+      "title": "3 rosas rosadas claro",
+      "description": "Un delicado ramo compuesto por 3 rosas de un suave tono rosado claro, transmitiendo ternura y elegancia en cada pétalo. Las flores están envueltas en una combinación de papel madera y papel blanco, creando un contraste sutil y armonioso que resalta su belleza natural. Como toque final, un moño de cinta ancha brillante en color rojo adorna el ramo, aportando un detalle vibrante y sofisticado. Un arreglo sencillo pero encantador, ideal para expresar cariño y dulzura con un estilo refinado.",
+      "price": 30000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-9-Photoroom_t8ofyg.webp"
+    },
+    {
+      "id": 13,
+      "title": "Ramo de 3 girasoles grandes",
+      "description": "Un radiante ramo de 3 girasoles grandes, de pétalos dorados y centros oscuros, que irradian energía y vitalidad. Las flores están envueltas en un rústico papel madera, resaltando su belleza natural con un toque cálido y orgánico. El ramo es sostenido con firmeza en una mano, permitiendo apreciar la frescura y el esplendor de cada girasol. Un arreglo sencillo pero impactante, ideal para transmitir alegría, optimismo y gratitud.",
+      "price": 30000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055712/Sin_t%C3%ADtulo-8-Photoroom_yhfpit.webp"
+    },
+    {
+      "id": 14,
+      "title": "Arreglo de 10 rosas rojas",
+      "description": "Un sofisticado ramo compuesto por 10 rosas rojas de intenso color y pétalos aterciopelados, simbolizando pasión y elegancia. El arreglo está envuelto en una combinación de papel negro y papel celofán verde, creando un contraste armonioso que realza la belleza de las flores. Como detalle distintivo, el ramo incluye dos pequeñas piñas marrones, aportando un toque rústico y original. Para completar la presentación, un llamativo moño rojo adorna la base, añadiendo un acabado refinado y equilibrado. Un ramo cautivador y único, ideal para expresar sentimientos profundos con un estilo elegante y creativo.",
+      "price": 45000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055711/Sin_t%C3%ADtulo-5-Photoroom_r6cjkb.webp"
+    },
+    {
+      "id": 15,
+      "title": "Ramo de 6 rosas blancas",
+      "description": "Un delicado ramo compuesto por 6 rosas blancas de pétalos suaves y puros, transmitiendo elegancia y serenidad. Las flores están envueltas en un rústico papel madera, que resalta su belleza natural con un toque cálido y sencillo. Como detalle final, un moño blanco de seda adorna la base del ramo, aportando un acabado refinado y sofisticado. El ramo es sostenido con gracia por una mano femenina, resaltando su delicadeza y armonía. Un arreglo sutil y encantador, ideal para expresar paz, amor y admiración.",
+      "price": 28000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055711/Sin_t%C3%ADtulo-7-Photoroom_gqmrg0.webp"
+    },
+    {
+      "id": 16,
+      "title": "Una flor Ipomoea purpurea",
+      "description": "Esta flor es una Ipomoea purpurea, comúnmente conocida como campanilla color azul. Simboliza la fugacidad de la vida y los nuevos comienzos. Su nombre se debe a que sus flores se abren temprano en la mañana y se marchitan al atardecer, representando lo efímero de los momentos y la renovación constante. En el lenguaje de las flores, puede transmitir un mensaje de aprecio por la belleza pasajera y la importancia de aprovechar el presente.",
+      "price": 18000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055711/Sin_t%C3%ADtulo-3-Photoroom_l77byb.webp"
+    },
+    {
+      "id": 17,
+      "title": "Arreglo floral de 3 margaritas de color rojo en el centro, pimpollos de color amarillo",
+      "description": "Un elegante ramo de tres margaritas rojas de pétalos vibrantes y simétricos, con un pimpollo delgado amarillo en el centro que resalta su belleza. Las flores están cuidadosamente envueltas en un sofisticado papel negro, que contrasta con la intensidad del rojo y realza la delicadeza de cada flor. El conjunto transmite una sensación de pasión y elegancia, perfecto para un regalo especial o una decoración llamativa.",
+      "price": 30000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055711/Sin_t%C3%ADtulo-1-Photoroom_ydjuni.webp"
+    },
+    {
+      "id": 18,
+      "title": "Ramo de 4 rosas blancas, una rosa color rojo y una rosa de color amarillo",
+      "description": "Arreglo floral de rosas blancas son delicadas y elegantes, con pétalos suaves y un brillo sutil que evoca pureza y serenidad. Se agrupan en un ramo, mostrando su color blanco inmaculado. Junto a ellas, resalta una rosa roja, con un intenso tono carmesí que simboliza pasión y amor. A su lado, una rosa amarilla añade un toque de frescura y alegría, con su color cálido que evoca amistad y esperanza. Todo el ramo está delicadamente adornado con puntilla blanca, que cubre las flores de manera sutil, mientras que el tallo presenta hojas verdes vibrantes, aportando un contraste natural. Una cinta de seda blanca envuelve parcialmente el tallo, añadiendo un toque de sofisticación y suavidad a la composición.",
+      "price": 24000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055711/Sin_t%C3%ADtulo-2-Photoroom_wz0kto.webp"
+    },
+    {
+      "id": 19,
+      "title": "Arreglo floral de margaritas compuesta por 2 margaritas de color rosado, 2 de color blancas y dos margaritas de color rojas",
+      "description": "Hermoso arreglo floral. Las margaritas blancas, con sus pétalos luminosos y centro dorado, simbolizan pureza, inocencia y la sencillez de la belleza natural. Las dos margaritas rosadas, con sus suaves tonos pastel, representan el cariño, la gratitud y el amor tierno. Finalmente, las margaritas rojas, con su vibrante color, transmiten pasión, deseos y fuerza emocional. Juntas, estas flores forman una combinación armónica que expresa un mensaje de amor, respeto y admiración, destacando tanto la pureza del blanco, la ternura del rosa y la intensidad del rojo.",
+      "price": 18000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055710/4-Photoroom_xoaukk.webp"
+    },
+    {
+      "id": 20,
+      "title": "Bellísimo ramo de novia 6 rosas rosadas y 6 rosas blancas",
+      "description": "El ramo de novia, compuesto por 6 delicadas rosas rosadas y 6 elegantes rosas blancas, fusiona la suavidad del rosa con la pureza del blanco, creando una armonía visual que simboliza amor tierno, esperanza y pureza. Las rosas rosadas, con su tono suave y romántico, representan la dulzura y afecto, mientras que las rosas blancas, con sus pétalos inmaculados, evocan la pureza y la elegancia de un nuevo comienzo. El ramo está perfectamente envuelto en el tallo con una cinta de seda rosada, que añade un toque de sofisticación y delicadeza, realzando la belleza natural de las flores y complementando perfectamente el conjunto.",
+      "price": 52000,
+      "imageUrl": "https://res.cloudinary.com/dea5dgj5e/image/upload/v1739055534/Sin_t%C3%ADtulo-14-Photoroom_ptz3rz.png"
+    }
+  ]
+  }

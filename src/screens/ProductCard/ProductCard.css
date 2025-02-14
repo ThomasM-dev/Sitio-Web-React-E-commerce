@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #ffecf1;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 100%;
+    background: #fff;
+    margin: 20px;
+}
+
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #ffd2e2;
+    transition: .3s linear;
+}
+
+.container .imgBx:before {
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+.container .imgBx img {
+    position: relative;
+    width: 450px;
+    transform: rotate(-30deg);
+    left: -50px;
+    transition: .9s linear;
+}
+
+.container .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .details h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    line-height: 1em;
+    color: #444;
+}
+
+.container .details h2 span {
+    font-size: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .details p {
+    width: 100%;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 36px;
+}
+
+.container .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: black;
+    float: left;
+    width: 100%;
+}
+
+.product-colors span {
+    width: 26px;
+    height: 26px;
+    top: 7px;
+    margin-right: 12px;
+    left: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.black {
+    background: #000;
+}
+
+.product-colors .active:after{
+    content: "";
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -5px;
+    top: -5px;
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+    .container {
+        height: auto;
+    }
+    .container .imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .imgBx img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .details {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .container .details p {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+  
+  .buttonCart {
+    position: absolute;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+    background: #a55275;
+    border: none;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 40px;
+    width: 35%;
+    height: 50px;
+    z-index: 2;
+  }
+    
+  
+  .btn-text {
+    white-space:nowrap;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .add .add-to-cart {
+    animation: 0.3s btn-add normal forwards ease;
+  }
+  
+  .add .btn-text {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .add .circle {
+    animation-delay: 0.2s;
+    animation-name: circle-check-loader;
+  }
+  
+  .add .check {
+    animation-delay: 0.85s;
+    animation-name: check;
+  }
+  
+  @keyframes btn-add {
+    80% {
+      opacity: 1;
+    }
+  
+    95% {
+      width: 50px;
+      border-radius: 100px;
+      background-color: transparent;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .icon-loader-check {
+    width: 54px;
+    height: 54px;
+    transform: rotate(90deg);
+  }
+  
+  .circle {
+    stroke-dasharray: 1666, 1650;
+    stroke-dashoffset: 2000;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+  
+  .check {
+    stroke-dasharray: 340;
+    stroke-dashoffset: 340;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-delay: 1s;
+  }
+  
+  @keyframes circle-check-loader {
+    0% {
+      stroke-dasharray: 1666, 1650;
+      stroke-dashoffset: 2000;
+    }
+  
+    100% {
+      stroke-dashoffset: 3320;
+    }
+  }
+  
+  @keyframes check {
+    0% {
+      stroke-dasharray: 340;
+      stroke-dashoffset: 340;
+      opacity: 0;
+    }
+  
+    40% {
+      opacity: 1;
+    }
+  
+    100% {
+      stroke-dashoffset: 94;
+      opacity: 1;
+    }
+  }
